@@ -1,0 +1,37 @@
+{
+  "name": "jsxhint-brunch",
+  "version": "0.0.1",
+  "description": "Adds JSXHint linting support to Brunch.",
+  "author": "Kohei Hasegawa",
+  "license": "MIT",
+  "homepage": "https://github.com/banyan/jsxhint-brunch",
+  "keywords": [
+    "jsxhint",
+    "jshint",
+    "react",
+    "brunch",
+    "plugin",
+    "jsx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:banyan/jsxhint-brunch.git"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "prepublish": "rm -rf lib && coffee --bare --output lib/ src/",
+    "test": "node_modules/.bin/mocha"
+  },
+  "dependencies": {
+    "execSync": "^1.0.2",
+    "jsxhint": "^0.4.14",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "jsxhint": "^0.4.14",
+    "chai": "1.7.0",
+    "coffee-script": "^1.8.0",
+    "mocha": "1.11.0",
+    "temp": "^0.8.1"
+  }
+}
