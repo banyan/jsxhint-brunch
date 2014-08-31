@@ -1,4 +1,4 @@
-# jsxhint-brunch
+# jsxhint-brunch [![Build Status](https://travis-ci.org/travis-ci/travis-api.svg?branch=master)](https://travis-ci.org/travis-ci/travis-api)
 
 Adds [JSXHint](https://github.com/STRML/JSXHint) support to [brunch](http://brunch.io).
 
