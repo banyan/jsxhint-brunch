@@ -28,10 +28,8 @@
     "lodash": "^2.4.1"
   },
   "devDependencies": {
-    "jsxhint": "^0.4.14",
     "chai": "1.7.0",
     "coffee-script": "^1.8.0",
-    "mocha": "1.11.0",
-    "temp": "^0.8.1"
+    "mocha": "1.11.0"
   }
 }
