@@ -4,7 +4,10 @@ Adds [JSXHint](https://github.com/STRML/JSXHint) support to [brunch](http://brun
 
 ## Install
 
-Install the plugin via npm with `npm install --save jsxhint-brunch`.
+```
+npm install --save jsxhint # currently it depends on cli
+npm install --save jsxhint-brunch
+```
 
 ## Option
 
