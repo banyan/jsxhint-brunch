@@ -1,8 +1,3 @@
-fs   = require('fs')
-util = require('util')
-exec = require('child_process').exec
-temp = require('temp').track()
-
 describe "Plugin", ->
   beforeEach ->
     @plugin = new Plugin {}
