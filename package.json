@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "sync-exec": "^0.5.0",
-    "jsxhint": "^0.15.1",
+    "jsxhint": "^0.12.1",
     "lodash": "^3.9.3"
   },
   "devDependencies": {
