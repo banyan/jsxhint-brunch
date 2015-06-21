@@ -1,6 +1,6 @@
 _    = require 'lodash'
 fs   = require 'fs'
-sh   = require 'execSync'
+exec = require 'sync-exec'
 path = require 'path'
 
 formatError = (error) ->
@@ -30,9 +30,9 @@ module.exports = class JsxhintLinter
       console.warn ".jshintrc parsing error: #{e}. jsxhint will run with default options."
 
   lint: (data, path, callback) ->
-    result = sh.exec "#{@command} #{path}"
+    result = exec "#{@command} #{path}"
 
-    if result.code is 0
+    if result.status is 0
       callback()
     else
       error = formatError result.stdout

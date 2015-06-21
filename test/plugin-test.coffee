@@ -19,13 +19,14 @@ describe "Plugin", ->
       done()
 
   it "should give correct errors", (done) ->
+    zlaj = "#{process.cwd()}/test/fixtures/invalid.js"
     @plugin.lint "", "#{process.cwd()}/test/fixtures/invalid.js", (error) ->
       expect(error).to.contain 'line 1, col 15, Unnecessary semicolon.'
       done()
 
   it "should give correct errors", (done) ->
     @plugin.lint "", "#{process.cwd()}/test/fixtures/invalid.jsx", (error) ->
-      expect(error).to.contain 'line 8, col 64, Unnecessary semicolon.'
+      expect(error).to.contain 'line 8, col 85, Unnecessary semicolon.'
       done()
 
   it "should not include warn when warnOnly is no", (done) ->
