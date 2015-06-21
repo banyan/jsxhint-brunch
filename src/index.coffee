@@ -32,7 +32,7 @@ module.exports = class JsxhintLinter
   lint: (data, path, callback) ->
     result = exec "#{@command} #{path}"
 
-    if result.code is 0
+    if result.status is 0
       callback()
     else
       error = formatError result.stdout
